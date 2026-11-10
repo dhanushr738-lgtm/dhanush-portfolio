@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanush | Developer Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080d1a;
+  color: white;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #10182a;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+section {
+  padding: 75px 8%;
+  scroll-margin-top: 65px;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 8vw, 65px);
+  margin: 15px 0;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.hero p {
+  color: #b7c3d6;
+  max-width: 550px;
+}
+
+.tag {
+  color: #38bdf8;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 25px;
+  background: #0284c7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #0369a1;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #38bdf8;
+}
+
+.about p, .contact p {
+  color: #cbd5e1;
+  max-width: 700px;
+}
+
+.skills, .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #131f34;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #263850;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
+.card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #b7c3d6;
+  font-size: 14px;
+}
+
+.contact {
+  background: #10182a;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+@media(max-width: 600px) {
+  nav {
+    padding: 15px 4%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  nav a {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">DHANUSH.DEV</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <p class="tag">WELCOME TO MY PORTFOLIO</p>
+
+  <h1>Hello, I'm <span>Dhanush!</span></h1>
+
+  <h2>Future Full-Stack Developer</h2>
+
+  <p>
+    I am passionate about technology, programming,
+    web development and cybersecurity.
+    I am building my skills one project at a time.
+  </p>
+
+  <a href="#projects" class="btn">Explore My Projects</a>
+</section>
+
+<section class="about" id="about">
+  <h2>About Me</h2>
+
+  <p>
+    Hello! I'm Dhanush, a computer science student
+    and aspiring full-stack developer.
+    My goal is to learn modern technologies,
+    build useful applications and become a
+    professional software developer.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+
+  <div class="skills">
+    <div class="card">
+      <h3>HTML</h3>
+      <p>Website structure</p>
+    </div>
+
+    <div class="card">
+      <h3>CSS</h3>
+      <p>Website design</p>
+    </div>
+
+    <div class="card">
+      <h3>JavaScript</h3>
+      <p>Website functionality</p>
+    </div>
+
+    <div class="card">
+      <h3>Python</h3>
+      <p>Programming fundamentals</p>
+    </div>
+
+    <div class="card">
+      <h3>Cybersecurity</h3>
+      <p>Learning digital security</p>
+    </div>
+
+    <div class="card">
+      <h3>SQL</h3>
+      <p>Database fundamentals</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="projects">
+    <div class="card">
+      <h3>My Portfolio</h3>
+      <p>My first personal website.</p>
+    </div>
+
+    <div class="card">
+      <h3>Smart Classroom</h3>
+      <p>Smart Classroom Energy Saver project.</p>
+    </div>
+
+    <div class="card">
+      <h3>Future Project</h3>
+      <p>More exciting projects coming soon.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+
+  <p>
+    Interested in technology and development?
+    Let's connect and share ideas.
+  </p>
+
+  <button class="btn" onclick="welcome()">
+    Say Hello
+  </button>
+</section>
+
+<footer>
+  © 2026 Dhanush | My Developer Portfolio
+</footer>
+
+<script>
+function welcome() {
+  alert("Thanks for visiting my portfolio!");
+}
+</script>
+
+</body>
+</html>
